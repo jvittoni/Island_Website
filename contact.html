@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dvice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Activities</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <nav class="navbar">
+                <div class="brand-title"><img src="https://i.postimg.cc/2SZbmpg1/Tanitit.png" alt="island-logo"></div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li class="nav-item"><a href="index.html">HOME</a></li>
+                        <li class="nav-item"><a href="transportation.html">TRANSPORTATION</a></li>
+                        <li class="nav-item"><a href="lodging.html">LODGING</a></li>
+                        <li class="nav-item"><a href="dining.html">DINING</a></li>
+                        <li class="nav-item"><a href="activities.html">ACTIVITIES</a></li>
+                        <li class="nav-item"><a href="faqs.html">FAQs</a></li>
+                        <li class="nav-item"><a href="contact.html">CONTACT US</a></li>
+
+                    </ul>
+                </div>
+                <script>
+                    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+                    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+                    toggleButton.addEventListener('click', () => {
+                        navbarLinks.classList.toggle('active')
+                    })
+                </script>
+            </nav>
+        </header>
+
+        
+        <div class="contact-us-form">
+        <div class="contact-container">
+            <div class="form-header">
+                <h1 class="form-title">Contact Us Form</h1>
+            </div>
+
+            <h3 class="form-directions">Please fill out and submit the form below to contact us with any questions, comments, or concerns that you have. We look forward to hearng from you!</h3>
+            <form action="#">
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="firstName">First Name</label>
+                        <input type="text" 
+                                id="firstName" 
+                                name="firstName" 
+                                placeholder="Enter Your First Name" 
+                                required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="username">Last Name</label>
+                        <input type="text" 
+                                id="username" 
+                                name="username" 
+                                placeholder="Enter Your Last Name" 
+                                required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" 
+                                id="phoneNumber" 
+                                name="phoneNumber" 
+                                placeholder="Enter Your Phone Number" 
+                                required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="email">Email</label>
+                        <input type="text" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter Your Email" 
+                                required>
+                    </div>
+                </div>
+
+                <div class="message-box">
+                    <label for="message" class="message-title">Message: </label>
+                    <textarea name="message" id="message" required>Enter Your Message (optional)...</textarea>
+                </div>
+
+                <div class="form-submit-btn">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+        </div>
+        
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li class="nav-item"><a href="index.html">Home</a></li>
+                            <li class="nav-item"><a href="transportation.html">Transportation</a></li>
+                            <li class="nav-item"><a href="lodging.html">Lodging</a></li>
+                            <li class="nav-item"><a href="dining.html">Dining</a></li>
+                            <li class="nav-item"><a href="activities.html">Activities</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>FAQs</h4>
+                        <ul>
+                            <li><a href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get In Touch</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
